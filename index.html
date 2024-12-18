@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Klasifikasi Gambar MRI Tumor Otak</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header dengan Hero Image -->
+  <header>
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Deteksi Tumor Otak <br> Dengan Gambar MRI</h1>
+        <p>Teknologi AI untuk Diagnosis Cepat dan Akurat</p>
+        <a href="#unggah" class="btn">Unggah Gambar</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Tentang Website -->
+<section id="tentang" class="section">
+    <div class="container">
+      <h2>Tentang Website Ini</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="ilustrasi-mri.png" alt="Ilustrasi MRI" class="illustration">
+        </div>
+        <div class="about-text">
+          <p>Website ini menggunakan <strong>kecerdasan buatan (AI)</strong> untuk menganalisis gambar MRI otak Anda. 
+          Dengan proses klasifikasi otomatis, sistem ini membantu dalam deteksi dini tumor otak.</p>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <!-- Proses Klasifikasi -->
+  <section id="proses" class="section">
+    <div class="container">
+      <h2>Bagaimana Cara Kerjanya?</h2>
+      <div class="steps">
+        <div class="step">
+          <img src="images/upload.png" alt="Unggah">
+          <h3>1. Unggah Gambar</h3>
+          <p>Pilih gambar MRI otak Anda untuk diunggah.</p>
+        </div>
+        <div class="step">
+          <img src="images/process.png" alt="Proses">
+          <h3>2. Proses AI</h3>
+          <p>AI memproses gambar dan menganalisis kemungkinan adanya tumor.</p>
+        </div>
+        <div class="step">
+          <img src="images/result.png" alt="Hasil">
+          <h3>3. Lihat Hasil</h3>
+          <p>Hasil klasifikasi akan ditampilkan dengan cepat dan akurat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Upload Gambar -->
+  <section id="unggah" class="section upload">
+    <div class="container">
+      <h2>Unggah Gambar MRI Anda</h2>
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="image">Pilih Gambar:</label>
+        <input type="file" name="image" id="image" accept="image/*" required>
+        <button type="submit" class="btn">Klasifikasikan Gambar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Klasifikasi Tumor Otak | Dibuat dengan ❤️ untuk kesehatan Anda</p>
+    </div>
+  </footer>
+</body>
+</html>
